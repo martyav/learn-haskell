@@ -8,7 +8,7 @@ I'm working off of a Windows 10 machine, Haskell 2010, and GHC 8.10.2.
 
 There are several ways to get started, but the least complicated is downloading the [Haskell platform](https://www.haskell.org/downloads/#platform) from the haskell.org website. You'll need to install the [Chocolatey](https://chocolatey.org/install) package manager first, though.
 
-## writing your first programs
+## wWiting your first programs
 
 ### Hello world
 
