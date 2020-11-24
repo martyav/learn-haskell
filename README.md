@@ -2,13 +2,13 @@
 
 I am playing around with Haskell on holiday break, out of curiosity about working with a functional language.
 
-I'm working off of a Windows 10 machine, using [Haskell 2010](https://www.haskell.org/onlinereport/haskell2010/), and [GHC](https://downloads.haskell.org/~ghc/8.2.2/docs/html/users_guide/intro.html) 8.10.2.
+I'm working off of a Windows 10 machine, using [Haskell 2010](https://www.haskell.org/onlinereport/haskell2010/), and [GHC](https://downloads.haskell.org/~ghc/8.2.2/docs/html/users_guide/intro.html) 8.10.2. 
 
 This README documents my learning experiences for future reference.
 
 ## Haskell set up
 
-There are several ways to get started, but the least complicated is downloading the [Haskell platform](https://www.haskell.org/downloads/#platform) from the Haskell.org website. You'll need to install the [Chocolatey](https://chocolatey.org/install) package manager first, though.
+There are several ways to get started, but the least complicated is installing the [Haskell platform](https://www.haskell.org/downloads/#platform) from the Haskell.org website. You'll need to install the [Chocolatey](https://chocolatey.org/install) package manager first, though.
 
 ## Writing your first programs
 
@@ -67,7 +67,7 @@ I was working off of an [older tutorial about IO in Haskell](https://wiki.haskel
 1. I really should have put a header on my file.
 2. I didn't strictly need the `main :: IO ()` line to get it to work.
 
-Haskell files should have a header on the first line stating where the entry point for the program is, though in my case was implied. My header should have looked like this:
+Haskell files should have a header on the first line stating where the entry point for the program is, though in my case it was implied. My header should have looked like this:
 
 ```Haskell
 module Main where
