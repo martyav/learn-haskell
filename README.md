@@ -2,7 +2,7 @@
 
 I am playing around with Haskell on holiday break, out of curiosity about working with a functional language.
 
-I'm working off of a Windows 10 machine.
+I'm working off of a Windows 10 machine, Haskell 2010, and GHC 8.10.2.
 
 ## Haskell set up
 
