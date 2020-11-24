@@ -2,7 +2,9 @@
 
 I am playing around with Haskell on holiday break, out of curiosity about working with a functional language.
 
-I'm working off of a Windows 10 machine, [Haskell 2010](https://www.haskell.org/onlinereport/haskell2010/), and [GHC](https://downloads.haskell.org/~ghc/8.2.2/docs/html/users_guide/intro.html) 8.10.2.
+I'm working off of a Windows 10 machine, using [Haskell 2010](https://www.haskell.org/onlinereport/haskell2010/), and [GHC](https://downloads.haskell.org/~ghc/8.2.2/docs/html/users_guide/intro.html) 8.10.2.
+
+This README documents my learning experiences for future reference.
 
 ## Haskell set up
 
@@ -25,6 +27,11 @@ There are several ways to get started, but the least complicated is downloading 
    ```
 
 3. Back in your CLI, type `ghc <filename.hs>`. This command generates a Haskell executable.
+
+   > **Note**
+   >
+   > Older docs may recommend running `ghc -o <filename.hs>` instead. This is not necessary, unless you want the executable to have a different name than the source file. See the [official flag reference](https://ghc.readthedocs.io/en/8.0.1/flags.html).
+
 4. Run the executable you just created. It should have the same name as your new file, but with an *.exe* extension instead of *.hs*. You will see the following text print to screen.
 
     ```PlainText
@@ -60,13 +67,13 @@ I was working off of an [older tutorial about IO in Haskell](https://wiki.haskel
 1. I really should have put a header on my file.
 2. I didn't strictly need the `main :: IO ()` line to get it to work.
 
-Haskell files should have a header on the first line stating where the entry point for the program is, though in my case in was implied. My header should have looked like this:
+Haskell files should have a header on the first line stating where the entry point for the program is, though in my case was implied. My header should have looked like this:
 
 ```Haskell
 module Main where
 ```
 
-Meanwhile, I intended the `main :: IO ()` bit to ensure the action was executed, but I could have just written something like the following and it would have run just fine:
+Meanwhile, I intended the `main :: IO ()` bit to ensure that the action was executed, but I could have just written something like the following and it would have run just fine:
 
 ```Haskell
 main = putStrLn "I'm a minimalist Haskell `Hello world` program!"
