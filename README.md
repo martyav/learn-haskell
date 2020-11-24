@@ -2,11 +2,11 @@
 
 I am playing around with Haskell on holiday break, out of curiosity about working with a functional language.
 
-I'm working off of a Windows 10 machine, Haskell 2010, and GHC 8.10.2.
+I'm working off of a Windows 10 machine, [Haskell 2010](https://www.haskell.org/onlinereport/haskell2010/), and [GHC](https://downloads.haskell.org/~ghc/8.2.2/docs/html/users_guide/intro.html) 8.10.2.
 
 ## Haskell set up
 
-There are several ways to get started, but the least complicated is downloading the [Haskell platform](https://www.haskell.org/downloads/#platform) from the haskell.org website. You'll need to install the [Chocolatey](https://chocolatey.org/install) package manager first, though.
+There are several ways to get started, but the least complicated is downloading the [Haskell platform](https://www.haskell.org/downloads/#platform) from the Haskell.org website. You'll need to install the [Chocolatey](https://chocolatey.org/install) package manager first, though.
 
 ## Writing your first programs
 
@@ -24,7 +24,7 @@ There are several ways to get started, but the least complicated is downloading 
         putStrLn "A bunch of Linux dunces on StackOverflow didn't know about the `Set-Content -Encoding` command and sent me on a wild goose chase."
    ```
 
-3. Back in your CLI, type `ghc <filename.hs>`. This command generates a Hasekll executable.
+3. Back in your CLI, type `ghc <filename.hs>`. This command generates a Haskell executable.
 4. Run the executable you just created. It should have the same name as your new file, but with an *.exe* extension instead of *.hs*. You will see the following text print to screen.
 
     ```PlainText
@@ -49,13 +49,11 @@ So how do you fix an incorrect encoding?
 
 If you want to change the encoding of a single file to UTF-8 via PowerShell, you can run `Set-Content -Encoding utf8 <filename>`. Note that this will delete the current contents of the file.
 
-##### Use UTF-8 for new files
+##### Use UTF-8 for new files going forward
 
 If you want to use UTF-8 across the board, and are running Windows 10 1809 or higher, you need to go into **Language settings** > **Administrative language settings** and check off **Use Unicode UTF-8 for worldwide language support**. See [Change default code page of Windows console to UTF-8](https://superuser.com/a/1435645). Earlier versions of Windows require you to mess around inside of the registry, which is also described at the link, in previous answers to the question.
 
-Deeply cursed.
-
-#### `Hello world` variants
+#### *Hello world* variants
 
 I was working off of an [older tutorial about IO in Haskell](https://wiki.haskell.org/Introduction_to_IO) and didn't realize two things:
 
