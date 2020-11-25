@@ -48,9 +48,9 @@ The first line in this program asserts that `main` is an *action* of type `IO`, 
 
 The next line states that `main` will be `do`ing several things when it is called. If we didn't add the `do` keyword, main could only perform one thing.
 
-Each of the things main will be doing are print statements. `PutStrLn` prints the string and adds a line break character at the end. There is a similar command, `putStrn`, that would just print the string without adding any breaks. 
+Each of the things main will be doing are print statements. `PutStrLn` is a function prints the string and adds a line break character at the end. There is a similar function, `putStr`, that would just print the string without adding any breaks. In Haskell, function arguments are placed next to the function's name, without needing to be enclosed in parentheses.
 
-Note that the print statements are indented under the `do` -- like Python, whitespace has syntacical meaning in Haskell.
+Also note that the print statements are indented under the `do` -- like Python, whitespace has syntacical meaning in Haskell.
 
 #### Adventures in file encoding
 
