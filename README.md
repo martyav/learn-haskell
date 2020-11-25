@@ -14,6 +14,8 @@ There are several ways to get started, but the least complicated is installing t
 
 ### Hello world
 
+This was my first attempt at a program. I opened up the [Haskell wiki](https://wiki.haskell.org) and looked up how to print a string.
+
 1. Create a new file with an *.hs* extension.
 2. In the new file, type and save:
 
@@ -39,6 +41,16 @@ There are several ways to get started, but the least complicated is installing t
     I just wasted an hour looking up how to change a file encoding on Windows.
     A bunch of Linux dunces on StackOverflow didn't know about the `Set-Content -Encoding` command and sent me on a wild goose chase.
     ```
+
+#### What's going on?
+
+The first line in this program asserts that `main` is an *action* of type `IO`, or in-out. That means that it is a value that can accept input and spit out an output.
+
+The next line states that `main` will be `do`ing several things when it is called. If we didn't add the `do` keyword, main could only perform one thing.
+
+Each of the things main will be doing are print statements. `PutStrLn` prints the string and adds a line break character at the end. There is a similar command, `putStrn`, that would just print the string without adding any breaks. 
+
+Note that the print statements are indented under the `do` -- like Python, whitespace has syntacical meaning in Haskell.
 
 #### Adventures in file encoding
 
