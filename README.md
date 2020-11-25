@@ -46,9 +46,9 @@ This was my first attempt at a program. I opened up the [Haskell wiki](https://w
 
 The first line in this program asserts that `main` is an *action* of type `IO`, or in-out. That means that it is a value that can accept input and spit out an output.
 
-The next line states that `main` will be `do`ing several things when it is called. If we didn't add the `do` keyword, main could only perform one thing.
+The next line states that `main` will be `do`ing several things when it is called. If we didn't add the `do` keyword, `main` could only perform one thing.
 
-Each of the things main will be doing are print statements. `PutStrLn` is a function prints the string and adds a line break character at the end. There is a similar function, `putStr`, that would just print the string without adding any breaks. In Haskell, function arguments are placed next to the function's name, without needing to be enclosed in parentheses.
+Each of the things `main` will be doing are print statements. `PutStrLn` is a function prints the string and adds a line break character at the end. There is a similar function, `putStr`, that would just print the string without adding any breaks. In Haskell, function arguments are placed next to the function's name, without needing to be enclosed in parentheses.
 
 Also note that the print statements are indented under the `do` -- like Python, whitespace has syntacical meaning in Haskell.
 
